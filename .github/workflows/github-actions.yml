@@ -1,5 +1,5 @@
 name: Github Action
-on: [push]
+on: [push, pull_request]
 jobs:
   Compile .ts files:
     runs-on: ubuntu-latest
