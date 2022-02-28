@@ -2,7 +2,9 @@
 
 # setup
 npm install
+npm install -g typescript
+npm install @types/node
 
 # build
-tsc dbanc.ts
+tsc
 node dbanc.js
