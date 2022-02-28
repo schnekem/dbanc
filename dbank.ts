@@ -10,7 +10,7 @@ app.listen(port, function() {
 
 // Datenbank
 const accounts = {
-    'a': 200000
+    'a': 200_000
 };
 
 // How much balance on :account ?

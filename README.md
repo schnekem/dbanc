@@ -3,5 +3,6 @@
 # setup
 npm install
 
-# run
+# build
+tsc dbanc.ts
 node dbanc.js
