@@ -3,14 +3,16 @@ const app = express();
 const port = 3000;
 
 app.listen(port, function() {
-    console.log(`Example app listening on port ${port}!`)
+    console.log(`Example app listening at address localhost:${port}!`)
 });
 
 // -- Webserver started
 
 // Datenbank
 const accounts = {
-    'a': 200_000
+    'a': 200_000,
+    'b': 15_000,
+    'c': 100_000
 };
 
 // How much balance on :account ?
