@@ -3,7 +3,7 @@ const app = express();
 const port = 3000;
 
 app.listen(port, function() {
-    console.log(`Example app listening at address localhost:${port}!`)
+    console.log(`Example app listening at address http://localhost:${port}!`)
 });
 
 // -- Webserver started
