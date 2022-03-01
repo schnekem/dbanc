@@ -38,5 +38,9 @@ app.get('/balances', (req, res) => {
     return res.send(accounts);
 })
 
-
+// Get Version
+app.get('/version', (req, res) => {
+    const package = require("./package.json");
+    return res.send("Version: " + package.version);
+});
 
