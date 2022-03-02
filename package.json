@@ -19,7 +19,6 @@
   "homepage": "https://github.com/nemicko/dbanc#readme",
   "dependencies": {
     "@types/node": "^17.0.21",
-    "eslint": "^8.10.0",
     "express": "^4.17.3"
   }
 }
