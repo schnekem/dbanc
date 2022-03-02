@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "run": "node dbank.js"
+    "run": "tsc && node dbank.js",
+    "run central": "tsc && node central/dbank.js",
+    "run central local": "tsc && node central/centralbank.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,7 @@
   "dependencies": {
     "@types/node": "^17.0.21",
     "eslint": "^8.10.0",
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "node-fetch": "^2.6.7"
   }
 }
