@@ -1,10 +1,6 @@
 name: Github Action
 on: [push, pull_request]
 jobs:
-  Test_Job:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo 'blub'
   Compile_ts_files:
     runs-on: ubuntu-latest
     steps:
