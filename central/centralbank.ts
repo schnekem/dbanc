@@ -28,6 +28,8 @@ app.post('/transfer/:from/:to/:amount', (req, res) => {
     const amount = parseInt(req.params.amount);
     if (amount < 0)
         return res.status(400).send('Rejected - negative payment');
+    if (!(req.params.from in accounts))
+        return res.status(400).send('Rejected - account doesn\'t exist');
     if (accounts[req.params.from] < amount)
         return res.status(400).send('Rejected - insufficient funds');
 
