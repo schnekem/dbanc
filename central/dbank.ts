@@ -39,6 +39,8 @@ app.post('/transfer/:from/:to/:amount', async (req, res) => {
     const from = req.params.from;
     const to = req.params.to;
 
+    if (!(from in accounts))
+        return res.status(400).send('Rejected - account doesn\'t exist');
     if (accounts[from] < amount)
         return res.status(400).send('Rejected - insufficient funds');
 
